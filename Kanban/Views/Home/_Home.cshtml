@@ -1,0 +1,24 @@
+﻿<script src="~/Scripts/jquery-2.2.3.js"></script>
+<script src="https://trello.com/1/client.js?key=ac79a551be09f12fd007b6b1173aa183"></script>
+<div ng-app="ImportApp">
+    <div ng-controller="ImportController as importKanban">
+        <div class="jumbotron">
+            <button type="button" class="btn btn-primary" ng-click="importKanban.Importar()">Importar</button>
+            <input type="text" value="" ng-model="importKanban.json" />
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4">
+                <ul class="list-group" ng-repeat="card in importKanban.Kanban.cards">
+                    <li class="list-group-item">{{card.name}}</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+</div>
