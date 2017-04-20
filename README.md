@@ -1,3 +1,3 @@
 # Kanban
 
-Projeto de integração com Trello
+Projeto de integração com Trello utilizando C#
